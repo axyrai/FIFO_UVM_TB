@@ -32,4 +32,7 @@ clocking m_cb @(posedge clk);
   input o_rddata;
 endclocking
 
+modport d_mp ( input clk, rstn, clocking d_cb);
+modport m_cb ( input clk, rstn, clocking m_cb);
+
 endinterface
